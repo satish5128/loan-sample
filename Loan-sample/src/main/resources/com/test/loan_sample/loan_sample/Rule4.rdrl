@@ -5,5 +5,11 @@ import java.lang.Number;
 rule "Rule4"
 	dialect "mvel"
 	when
+		Applicant( creditScore >= 501 )
+		Applicant( creditScore <= 750 )
+		Loan( amount <= 8000 )
 	then
+		Loan fact0 = new Loan();
+		fact0.setApproved( true );
+		insert( fact0 );
 end
