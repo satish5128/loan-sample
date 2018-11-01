@@ -2,7 +2,7 @@ package com.test.loan_sample.loan_sample;
 
 import java.lang.Number;
 
-rule "loan-rules"
+rule "Rule1"
 	dialect "mvel"
 	when
 		Applicant( creditScore <= 300 )
