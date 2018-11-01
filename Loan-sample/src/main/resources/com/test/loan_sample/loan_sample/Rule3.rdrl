@@ -5,5 +5,11 @@ import java.lang.Number;
 rule "Rule3"
 	dialect "mvel"
 	when
+		Applicant( creditScore >= 301 )
+		Applicant( creditScore <= 500 )
+		Loan( amount > 4000 )
 	then
+		Loan fact0 = new Loan();
+		fact0.setApproved( false );
+		insert( fact0 );
 end
