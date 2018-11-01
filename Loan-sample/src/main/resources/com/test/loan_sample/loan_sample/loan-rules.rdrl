@@ -5,5 +5,9 @@ import java.lang.Number;
 rule "loan-rules"
 	dialect "mvel"
 	when
+		Applicant( creditScore <= 300 )
 	then
+		Loan fact0 = new Loan();
+		fact0.setApproved( false );
+		insertLogical( fact0 );
 end
