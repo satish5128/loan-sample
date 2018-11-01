@@ -7,7 +7,7 @@ rule "Rule2"
 	when
 		Applicant( creditScore >= 301 )
 		Applicant( creditScore <= 500 )
-		Loan( amount < 4000 )
+		Loan( amount <= 4000 )
 	then
 		Loan fact0 = new Loan();
 		fact0.setApproved( true );
