@@ -1,0 +1,9 @@
+package com.test.loan_sample.loan_sample;
+
+import java.lang.Number;
+
+rule "Rule5"
+	dialect "mvel"
+	when
+	then
+end
