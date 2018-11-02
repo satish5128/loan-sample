@@ -16,7 +16,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>58</executionTimeResult>
+      <executionTimeResult>28</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -26,8 +26,15 @@
       <successResult>true</successResult>
       <actualResult>1</actualResult>
     </expect-rule>
+    <expect-rule>
+      <ruleName>Row 2 loan-application</ruleName>
+      <explanation>Rule [Row 2 loan-application] was not activated.</explanation>
+      <expectedFire>false</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>0</actualResult>
+    </expect-rule>
   </fixtures>
-  <lastRunResult>2018-11-02 07:18:42.976 UTC</lastRunResult>
+  <lastRunResult>2018-11-02 07:19:29.384 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.test.loan_sample.loan_sample</packageName>
