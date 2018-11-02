@@ -27,8 +27,19 @@
       <name>l</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>14</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
+    <expect-rule>
+      <ruleName>Row 6 loan-application</ruleName>
+      <explanation>Rule [Row 6 loan-application] was activated 1 times.</explanation>
+      <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
+    </expect-rule>
   </fixtures>
+  <lastRunResult>2018-11-02 08:54:08.297 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.test.loan_sample.loan_sample</packageName>
