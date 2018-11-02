@@ -9,14 +9,17 @@ public class Loan implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Amount")
+   @org.kie.api.definition.type.Label("Amount")
    private int amount;
-   @org.kie.api.definition.type.Label(value = "Duration")
+   @org.kie.api.definition.type.Label("Duration")
    private int duration;
-   @org.kie.api.definition.type.Label(value = "Interest Rate")
+   @org.kie.api.definition.type.Label("Interest Rate")
    private double interestRate;
-   @org.kie.api.definition.type.Label(value = "Approved")
+   @org.kie.api.definition.type.Label("Approved")
    private boolean approved;
+
+   @org.kie.api.definition.type.Label(value = "isApproved")
+   private java.lang.String isApproved;
 
    public Loan()
    {
@@ -62,12 +65,24 @@ public class Loan implements java.io.Serializable
       this.approved = approved;
    }
 
-   public Loan(int amount, int duration, double interestRate, boolean approved)
+   public java.lang.String getIsApproved()
+   {
+      return this.isApproved;
+   }
+
+   public void setIsApproved(java.lang.String isApproved)
+   {
+      this.isApproved = isApproved;
+   }
+
+   public Loan(int amount, int duration, double interestRate, boolean approved,
+         java.lang.String isApproved)
    {
       this.amount = amount;
       this.duration = duration;
       this.interestRate = interestRate;
       this.approved = approved;
+      this.isApproved = isApproved;
    }
 
 }
