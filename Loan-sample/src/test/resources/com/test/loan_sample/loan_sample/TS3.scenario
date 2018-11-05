@@ -40,6 +40,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>loan-sample-KBS</string>
+    <string>kstateless</string>
   </ksessions>
 </scenario>
