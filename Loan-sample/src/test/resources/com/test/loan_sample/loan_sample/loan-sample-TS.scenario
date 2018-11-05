@@ -42,6 +42,6 @@
     <imports/>
   </imports>
   <ksessions>
-    <string>kstateless</string>
+    <string>kstateful</string>
   </ksessions>
 </scenario>
